@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<body>
+<h>College Result Portal</h></br></br>
+<input type="text" placeholder="enter regnumber" id="reg"></br></br>
+<button onclick="show()">Getresults</button>
+<p id="result"> </p>
+<script>
+const student=[{ reg:101,name:"charan",marks:90,result:"pass"},
+{reg:102,name:"pavan",marks:82,result:"pass"}];
+
+function show()
+{
+let input=document.getElementById("reg").value;
+let found=null;
+
+for (let i=0;i<student.length;i++){
+if(student[i].reg==input){
+found=student[i];
+break;
+}
+}
+if (found){
+document.getElementById("result").innerHTML="Regno:"+found.reg+"<br> Name: " + found.name + "<br> Marks:"+found.marks+"<br> Status: " + found.result;
+}
+else{
+document.getElementById("result").innerHTML="student not found" ;}
+}
+</script>
+</body>
+</html>
+
+
