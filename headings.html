@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body bgcolor=green> 
+<input type="text" id="user">
+<button onclick="submitnow()">submit</button>
+<h1 id="output1"></h1></br>
+<h2 id="output2"></h2></br>
+<h3 id="output3"></h3></br>
+<h4 id="output4"></h4></br>
+<h5 id="output5"></h5></br>
+<h6 id="output6"></h6></br>
+<script>
+function submitnow(){
+var data=document.getElementById("user").value;
+document.getElementById("output1").innerHTML=data;
+document.getElementById("output2").innerHTML=data;
+document.getElementById("output3").innerHTML=data;
+document.getElementById("output4").innerHTML=data;
+document.getElementById("output5").innerHTML=data;
+document.getElementById("output6").innerHTML=data;
+}
+</script>
+</body>
+</html>
